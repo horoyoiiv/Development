@@ -98,13 +98,13 @@ $(TARGET) : main.o math.o     // main 을 생성
 ```
 
 ## 3. 컴파일 옵션 변수  
-
+* **CFLAGS** 변수를 통해 `컴파일` 시의 옵션을 설정할 수 있다.  
 ```
 CC = g++
 TARGET = main
 CFLAGS = -Wall      // 컴파일 시 부여할 옵션을 변수로 선언 | 모든 warning을 출력
 
-all : $(TARGET)
+all : $(TARGET)	    
 
 main.o : main.cpp
 	$(CC) $(CFLAGS) -c main.cpp   // 해당 옵션을 부여
@@ -115,3 +115,12 @@ math.o : math.cpp
 $(TARGET) : main.o math.o
 	$(CC) -o $(TARGET) main.o math.o
 ```
+
+## 4. all  
+* makefile은 순차적으로 커맨드를 읽어들여, 처음 나오는 것부터 수행한다.  
+* all을 사용하여, 첫 번째 타겟을 지정한다.    
+```
+all : $(TARGET)
+```
+
+
