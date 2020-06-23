@@ -1,8 +1,3 @@
-
-[Ref](https://araikuma.tistory.com/462?category=782572)  
-[Ref](http://theeye.pe.kr/archives/1990)  
-
-
 # gradle  
 
   * Maven을 대체하기 위해 등장한(?) **빌드 도구**(build tool)  
@@ -84,6 +79,7 @@ public class HelloWorld {
 
 ```
 
+## 4. jar 추가하기  
 
 
 
